@@ -1,0 +1,20 @@
+<h1>There are {{wordsCount}} words in your text.</h1>
+
+
+<h1>Your text is:</h1>
+
+{{fulltext}}
+
+<h1>The words statistics</h1>
+
+
+
+{% for word, counttotal in wordslibaranged %}
+
+{{word}} - {{counttotal}}
+<br/>
+
+{% endfor %}
+
+<br/>
+<a href="{% url 'home' %}">Go to a start page</a>
